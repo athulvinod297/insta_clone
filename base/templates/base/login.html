@@ -1,0 +1,8 @@
+<form method ="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    
+    <input type="submit"/>
+</form>
+<h3>if user is not registered</h3><br>
+<a href="{% url 'register' %}">register</a>
